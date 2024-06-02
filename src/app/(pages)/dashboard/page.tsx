@@ -21,15 +21,15 @@ const Dashboard = async () => {
             {/* Title */}
             <div className="max-w-2xl mx-auto text-center my-24 lg:mb-14">
                 <h2 className="text-2xl text-neutral-200 font-bold md:text-4xl md:leading-tight">
-                    My listings
+                    Миний жагсаалт
                 </h2>
             </div>
             <h2 className="text-2xl text-neutral-200 font-bold md:text-4xl md:leading-tight">
-                My Found Items:
+                Олсон зүйлсийн жагсаалт:
             </h2>
             <DisplayMyFoundItems myItems={myFoundItems} />
             <h2 className="text-2xl text-neutral-200 mt-32 font-bold md:text-4xl md:leading-tight">
-                My Lost Items:
+                Алдсан зүйлсийн жагсаалт:
             </h2>
             <DisplayMyLostItems myItems={myLostItems} />
         </div>

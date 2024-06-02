@@ -86,7 +86,7 @@ const NavBar = () => {
                   className="text-sm text-white md:py-4 focus:outline-none focus:text-neutral-300"
                   href="/"
               >
-                  Home
+                  Нүүр
               </Link>
               <Link
                   className="text-sm text-white md:py-4 focus:outline-none focus:text-neutral-300"
@@ -103,7 +103,7 @@ const NavBar = () => {
                   () => setIsDropDownopen(!isDropDownOpen)
                 }
               >
-                Explore
+                Хайх
                 <svg
                   className="flex-shrink-0 ms-1 size-4"
                   xmlns="http://www.w3.org/2000/svg"
@@ -126,14 +126,14 @@ const NavBar = () => {
                     href="/lostitems"
                     onClick={() => setIsDropDownopen(false)}
                   >
-                    Lost
+                    Алдсан
                   </Link>
                   <Link
                     className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-white font-medium focus:outline-none focus:text-neutral-300"
                     href="/founditems"
                     onClick={() => setIsDropDownopen(false)}
                   >
-                    Found
+                    Олсон
                   </Link>
                 </div>
               )}

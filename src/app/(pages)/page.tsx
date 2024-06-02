@@ -2,7 +2,6 @@
 import React from 'react'
 import { useUser } from '@clerk/nextjs';
 import { useEffect } from 'react';
-
 import saveUser from '../api/saveUser';
 
 //Components

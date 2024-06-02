@@ -19,7 +19,7 @@ const Card2 = (props: any) => {
           <div className="bg-white p-4 rounded-t-none rounded-b-md">
               <div className='flex flex-row justify-between'>
                 <div className='block text-xs text-left text-gray-900'>
-                  {user ? (<p>{props.item.author_username}</p>) : (<p>Anonymous</p>)}
+                  {user ? (<p>{props.item.author_username}</p>) : (<p>Хэрэглэгч</p>)}
                 </div>
                 <div className="relative block text-xs text-gray-900 text-right">{props.item.created_at.toLocaleDateString()}</div>
               </div>

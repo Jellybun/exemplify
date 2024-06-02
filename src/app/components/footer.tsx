@@ -1,6 +1,19 @@
+'use client'
+
+import { useState } from 'react'
 import React from 'react'
 import Image from 'next/image'
+import i18next from 'i18next';
+
+
 const Footer = () => {
+    const [locale, setLocale] = useState('en');
+
+    const changeLanguage = (lang: any) => {
+        i18next.changeLanguage(lang);
+      };
+
+
   return (
     <>
         {/* ========== FOOTER ========== */}
@@ -95,21 +108,27 @@ const Footer = () => {
             />
             </svg>
             <div className="relative z-10">
-            <div className="w-full max-w-5xl px-4 xl:px-0 py-10 lg:pt-16 mx-auto">
-                <div className="inline-flex items-center">
-                {/* Logo */}
-                <Image
-                src="https://cdn.discordapp.com/attachments/1153100871178125343/1240882294806544475/Screenshot_2024-05-16_212200-removebg-preview.png?ex=66482d31&is=6646dbb1&hm=0033d810e0c091d83d8ef2079764bc66476562d051d43f99cb1bb94db9453e83&"
-                alt="Logo"
-                width={50} // Adjust the width as needed
-                height={50} // Adjust the height as needed
-                />
-                {/* End Logo */}
-                <div className="border-s border-neutral-700 ps-5 ms-5">
-                    <p className="text-sm text-neutral-400">2024 WhitBox</p>
+                <div className="flex flex-row justify-between w-full max-w-5xl px-4 xl:px-0 py-10 mx-auto">
+                    <div className="text-left inline-flex items-center">
+                    {/* Logo */}
+                    <Image
+                    src="https://cdn.discordapp.com/attachments/1153100871178125343/1240882294806544475/Screenshot_2024-05-16_212200-removebg-preview.png?ex=66482d31&is=6646dbb1&hm=0033d810e0c091d83d8ef2079764bc66476562d051d43f99cb1bb94db9453e83&"
+                    alt="Logo"
+                    width={50} // Adjust the width as needed
+                    height={50} // Adjust the height as needed
+                    />
+                    {/* End Logo */}
+                        <div className="border-s border-neutral-700 ps-5 ms-5">
+                            <p className="text-sm text-neutral-400">2024 WhitBox</p>
+                        </div>
+                    </div>
+                    {/* <div className='text-right mx-1'>
+                        <select onChange={(e) => changeLanguage(e.target.value)} value={locale} className="block bg-white text-center px-1 py-2 rounded-full text-sm disabled:opacity-50 disabled:pointer-events-none">
+                            <option value='en' >English (EN)</option>
+                            <option value='mn' >Mongolian (MN)</option>
+                        </select>
+                    </div> */}
                 </div>
-                </div>
-            </div>
             </div>
         </footer>
     {/* ========== END FOOTER ========== */}

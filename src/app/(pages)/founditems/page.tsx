@@ -17,11 +17,10 @@ const FoundItems = async () => {
             {/* Title */}
             <div className="max-w-2xl mx-auto text-center my-24 lg:mb-14">
                 <h2 className="text-2xl text-neutral-200 font-bold md:text-4xl md:leading-tight">
-                    The list of found items
+                    Олсон зүйлсийн жагсаалт
                 </h2>
                 <p className="mt-1 text-gray-300">
-                    See how game-changing companies are making the most of every engagement
-                    with Preline.
+     
                 </p>
             </div>
             <div className='flex flex-row justify-between py-9' >
@@ -33,7 +32,7 @@ const FoundItems = async () => {
                         className="inline-block rounded-lg border border-neutral-200 bg-neutral-200 px-12 py-3 text-sm font-medium text-neutral-900 hover:bg-neutral-300 hover:text-neutral-900 focus:outline-none focus:ring active:text-neutral-100"
                         href="/createfoundpost"
                         >
-                        Add found item
+                        Олсон зүйл оруулах
                     </Link>
                 </SignedIn>
                 

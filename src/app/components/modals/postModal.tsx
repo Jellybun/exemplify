@@ -39,8 +39,8 @@ const PostModal = (props: any) => {
                             </ul>
                         </div>
                         <div className='text-gray-700 text-sm'>
-                            <p>Found the item at: {props.item.location}</p>
-                            <p>Lost date: {props.item.lost_date}</p>
+                            <p>Алдсан газар: {props.item.location}</p>
+                            <p>Алдсан хугацаа: {props.item.lost_date}</p>
 
                         </div>
                     </div>

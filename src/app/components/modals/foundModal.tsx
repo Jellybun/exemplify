@@ -39,8 +39,8 @@ const FoundModal = (props: any) => {
                             </ul>
                         </div>
                         <div className='text-gray-700 text-sm'>
-                            <p>Found the item at: {props.item.location}</p>
-                            <p>Found date: {props.item.found_date}</p>
+                            <p>Олсон газар: {props.item.location}</p>
+                            <p>Олсон хугацаа: {props.item.found_date}</p>
 
                         </div>
                     </div>

@@ -63,10 +63,10 @@ const CreateFoundPost = () => {
             <div className="bg-white rounded-xl shadow">
             <div className="text-center mb-2 pt-16 pb-6">
                 <h2 className="text-2xl md:text-3xl font-bold text-neutral-800">
-                    Add a new listing for an item you have found
+                    Олсон зүйлс оруулах:
                 </h2>
                 <p className="text-sm mt-6 text-gray-500">
-                    Be sure to provide accurate and detailed information for the best result
+                    Үнэн зөв мэлээлэл оруулаарай
                 </p>
 
             </div>
@@ -78,7 +78,7 @@ const CreateFoundPost = () => {
                             htmlFor="af-submit-app-project-name"
                             className="inline-block text-sm font-medium text-gray-800 mt-2.5"
                         >
-                            Post title
+                            Гарчиг
                         </label>
                         <input
                             onChange={(e) => setTitle(e.target.value)}
@@ -93,7 +93,7 @@ const CreateFoundPost = () => {
                             htmlFor="af-submit-app-description"
                             className="inline-block text-sm font-medium text-gray-800 mt-2.5"
                         >
-                            Description
+                            тайлбар
                         </label>
                         <textarea
                             onChange={(e) => setDesc(e.target.value)}
@@ -109,7 +109,7 @@ const CreateFoundPost = () => {
                             htmlFor="af-submit-app-project-name"
                             className="inline-block text-sm font-medium text-gray-800"
                         >
-                            Location where you found the item
+                            Хаана Алдсан бэ
                         </label>
                         <input
                             onChange={(e) => setLocation(e.target.value)}
@@ -124,12 +124,12 @@ const CreateFoundPost = () => {
                         htmlFor="af-submit-app-description"
                         className="inline-block text-sm font-medium text-gray-800 mt-2.5"
                     >
-                        When did you find the item
+                        Хэзээ Алдсан Бэ
                     </label>
                     
                     <DatePicker color="default" className=" max-w-[284px] border-2 border-gray-200 rounded-lg" label="" aria-label='top' value={value} onChange={setValue} isRequired />
                     <p className="text-default-500 text-sm">
-                    Selected date: {value ? formatter.format(value.toDate(getLocalTimeZone())) : "--"}
+                    хугацаа {value ? formatter.format(value.toDate(getLocalTimeZone())) : "--"}
                     </p>
                     
                     </div>
