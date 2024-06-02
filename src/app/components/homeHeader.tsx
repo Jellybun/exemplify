@@ -1,11 +1,8 @@
 'use client'
 import React from 'react'
 import Spline from '@splinetool/react-spline';
-import { useTranslation } from 'react-i18next';
 
 const componentHeader = () => {
-    const { t } = useTranslation();
-
     return (
         <>
             <main id="content">
