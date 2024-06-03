@@ -136,7 +136,6 @@ const CreateFoundPost = () => {
                             Хаана Алдсан бэ
                         </label>
                         <input
-                            onBlur={handleBlur}
                             onChange={(e) => setLocation(e.target.value)}
                             value={location}
                             type="text"
